@@ -1679,7 +1679,7 @@ checkHandles() {
 
 ; internal stuff
 refreshGTA() {
-    newPID := getPID("GTA:SA:MP")
+    newPID := getPID("GTA Criminal Russia Multiplayer 0.3.7 Beta-Testing 2.4.4")
     if(!newPID) {                            ; GTA not found
         if(hGTA) {                            ; open handle
             virtualFreeEx(hGTA, pMemory, 0, 0x8000)
@@ -1715,7 +1715,7 @@ refreshSAMP() {
     if(dwSAMP)
         return true
     
-    dwSAMP := getModuleBaseAddress("samp.dll", hGTA)
+    dwSAMP := getModuleBaseAddress("san_andreas_multiplayer.dll", hGTA)
     if(!dwSAMP)
         return false
     
